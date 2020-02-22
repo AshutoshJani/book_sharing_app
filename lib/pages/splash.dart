@@ -1,6 +1,7 @@
-import 'package:book_sharing_app/pages/login.dart';
-import 'package:book_sharing_app/pages/register.dart';
 import 'package:flutter/material.dart';
+import 'package:book_sharing_app/pages/auth/login.dart';
+import 'package:book_sharing_app/pages/auth/register.dart';
+import 'package:book_sharing_app/pages/home_page/home_screen.dart';
 
 class Splash extends StatelessWidget {
 //  final controller = PageController(
@@ -76,29 +77,29 @@ class JoinUs extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               child: RaisedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
                 },
-                child: Text("Login"),
+                child: Text("Get Started"),
                 textColor: Colors.white,
                 color: Color.fromRGBO(255, 94, 94, 1),
                 splashColor: Color.fromRGBO(255, 190, 181, 1),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 10.0),
-              child: RaisedButton(
-                onPressed: (){
-                  Navigator.push(context,
-                      MaterialPageRoute(
-                          builder: (context) => Register()
-                      ));
-                },
-                child: Text("Register"),
-                textColor: Colors.white,
-                color: Color.fromRGBO(255, 94, 94, 1),
-                splashColor: Color.fromRGBO(255, 190, 181, 1),
-              ),
-            ),
+//            Padding(
+//              padding: const EdgeInsets.only(top: 10.0),
+//              child: RaisedButton(
+//                onPressed: (){
+//                  Navigator.push(context,
+//                      MaterialPageRoute(
+//                          builder: (context) => Register()
+//                      ));
+//                },
+//                child: Text("Register"),
+//                textColor: Colors.white,
+//                color: Color.fromRGBO(255, 94, 94, 1),
+//                splashColor: Color.fromRGBO(255, 190, 181, 1),
+//              ),
+//            ),
           ],
         ),
       ),
