@@ -26,7 +26,17 @@ class _PostViewPageState extends State<PostViewPage> {
             ],
           ),
         ),
+        body: _buildBody(),
       ),
+    );
+  }
+
+  Widget _buildBody(){
+    return TabBarView(
+      children: [
+        Icon(Icons.directions_car,color: Colors.white,),
+        Icon(Icons.directions_transit,color: Colors.white,),
+      ],
     );
   }
 }

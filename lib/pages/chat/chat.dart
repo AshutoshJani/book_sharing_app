@@ -5,7 +5,8 @@ class Chat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("Chat"),
+        child: Text("Chat",
+          style: TextStyle(color: Colors.white, fontSize: 24),),
       ),
     );
   }

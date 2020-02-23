@@ -5,7 +5,8 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("Search"),
+        child: Text("Search",
+        style: TextStyle(color: Colors.white, fontSize: 24),),
       ),
     );
   }

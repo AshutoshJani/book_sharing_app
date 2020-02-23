@@ -5,7 +5,8 @@ class UserProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("User Profile"),
+        child: Text("User Profile",
+          style: TextStyle(color: Colors.white, fontSize: 24),),
       ),
     );
   }

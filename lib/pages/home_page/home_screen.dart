@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:book_sharing_app/pages/chat/chat.dart';
-import 'package:book_sharing_app/pages/post/donate.dart';
-import 'package:book_sharing_app/pages/post/request.dart';
+import 'package:book_sharing_app/pages/post/choose_post.dart';
 import 'package:book_sharing_app/pages/profile/user_profile.dart';
 import 'package:book_sharing_app/pages/search/search.dart';
 import 'package:book_sharing_app/pages/post_view/post_view_page.dart';
@@ -15,8 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var pages = [
     new PostViewPage(),
     new Search(),
-    new DonateBook(),
-    new RequestBook(),
+    new ChoosePost(),
     new Chat(),
     new UserProfile(),
   ];
@@ -74,12 +72,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildBody() {
-    return TabBarView(
-      children: <Widget>[
-        Icon(Icons.radio, color: Colors.white),
-        Icon(Icons.camera, color: Colors.white)
-      ],
-    );
-  }
 }
